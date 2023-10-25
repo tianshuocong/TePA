@@ -1,6 +1,5 @@
 from __future__ import print_function
 import sys
-sys.path.append("../..") 
 import argparse
 from tqdm import tqdm
 from PIL import Image
@@ -79,8 +78,6 @@ def eval_base():
 
             ## Logger
             logging.info(f"[Frozen target model Acc], Corruption {corruption}, level {level}:  {acc_base:.2f}")
-
-    logging.info(f"##########################\n\n")
 
 
 
