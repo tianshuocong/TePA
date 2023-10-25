@@ -12,8 +12,7 @@ def adapt_single_ttt(image, ext, head):
     NORM = ((0.4913, 0.4821 ,0.4465), (0.2470, 0.2434, 0.261))
     tr_transforms_adapt = transforms.Compose([transforms.RandomCrop(32, padding=4),
                                     transforms.RandomHorizontalFlip(),
-                                    transforms.Normalize(*NORM)])
-    #ext = extractor_from_layer2(net)                            
+                                    transforms.Normalize(*NORM)])                          
     head.eval()
     ext.train()
     model = ExtractorHead(ext, head)
@@ -28,7 +27,6 @@ def adapt_single_ttt(image, ext, head):
         optimizer_adapt.zero_grad()
         outputs = model(inputs_ssh)
         loss_ssh = criterion_ssh(outputs, labels_ssh)
-        #print(loss_ssh)
         loss_ssh.backward()
         optimizer_adapt.step()
     return loss_ssh
