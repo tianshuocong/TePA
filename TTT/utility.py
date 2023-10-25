@@ -74,7 +74,7 @@ def eval_base():
 			ext_target, head_rot_target, head_cls_target = load_target("res18", "cifar10", 4)
 			classifier_target = ExtractorHead(ext_target, head_cls_target)
 
-      ## EVALUATION
+      			## EVALUATION
 			acc_base = test_base_ttt(teloader_2, classifier_target)
 
 			## Logger
