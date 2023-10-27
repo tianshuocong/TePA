@@ -66,5 +66,5 @@ You can download the checkpoints here:
     - [ResNet18 pre-trained on CIFAR-100](https://drive.google.com/file/d/1c4tukwIM7dUWMpZMDUu86YpRxImCGaug/view?usp=sharing)
     - [ResNet50 pre-trained on CIFAR-10](https://drive.google.com/file/d/1Qek-n8YZg2kb4lYZjgB29lShKasSIWQU/view?usp=sharing)
     - [ResNet50 pre-trained on CIFAR-100](https://drive.google.com/file/d/1-F2XuBEN4piYxdNmo0ryIO5EFRYDvrjA/view?usp=sharing)
-  - Surrogate Model:
+  - Surrogate Model (only for poisoning TENT and RPL):
     - [VGG-11 pre-trained on CINIC-10 (without CIFAR-10)](https://drive.google.com/file/d/1xsgYAewsNUB-V9HJ_vpj41ggDCoXEWn9/view?usp=sharing)
