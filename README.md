@@ -33,6 +33,7 @@ python TTT/utility.py
 ```
 
 ## Poison TTA-models 🦠
+Algorithm-1 is implemented in `TTA/poigen.py`, here we use DIM as the transfer-based adversarial attack method. After generating poisoned samples by `poigen.py`, we upload the poisoned samples to target TTA-models through running:  
 ```
 python TTT/poison_ttt.py
 ```
