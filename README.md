@@ -43,18 +43,20 @@ Then, we can get the results of Figure 5-8.
 <img width="80%" alt="The workflow of TePA" src="fig/poison_result.png">
 </div>
 
-## Dataset
+## Dataset 💾
 Please download the following datasets through the official website and 
 - CIFAR-10 & CIFAR-100: https://www.cs.toronto.edu/~kriz/cifar.html
 - CIFAR-10-C: https://zenodo.org/records/2535967
 - CIFAR-100-C: https://zenodo.org/records/3555552
 - CINIC-10: https://github.com/BayesWatch/cinic-10
 
-## Models
+## Models 🕸
 You can download the checkpoints here:
 - TTT:
-  - Target Model:
+  - Target Models:
     - [ResNet18 pre-trained on CIFAR-10](https://drive.google.com/file/d/1f524MN_rZfXoyReE0hdJFfVwesz_vrLp/view?usp=sharing)
+    - [ResNet18 pre-trained on CIFAR-100](https://drive.google.com/file/d/1nycPhkWNG66ooi9iK9eC2_eIKvMjCOUF/view?usp=sharing)
     - [ResNet50 pre-trained on CIFAR-10](https://drive.google.com/file/d/11Q43JwSPTQgWe9nN4qjnKY1GfwecK4UT/view?usp=sharing)
+    - [ResNet50 pre-trained on CIFAR-100](https://drive.google.com/file/d/1kAuKDXItyszY8P035cSBkcg-wtTLUWbx/view?usp=sharing)
   - Surrogate Model:
     - [ResNet18 pre-trained on CINIC-10 (without CIFAR-10)](https://drive.google.com/file/d/18QdOFZxxeyQ00bgsrYZTV-AbZUwiXknL/view?usp=sharing)
