@@ -13,7 +13,7 @@ Thanks for your interest in our paper, please feel free to give us a ⭐️ and 
 @inproceedings{cong2024tepa,
   title={Test-Time Poisoning Attacks Against Test-Time Adaptation Models},
   author={Tianshuo Cong and Xinlei He and Yun Shen and Yang Zhang},
-  booktitle={IEEE Symposium on Security and Privacy},
+  booktitle={IEEE Symposium on Security and Privacy (S\&P)},
   year={2024}
 }
 ```
@@ -71,3 +71,6 @@ You can download the checkpoints here:
     - [ResNet50 pre-trained on CIFAR-100](https://drive.google.com/file/d/1-F2XuBEN4piYxdNmo0ryIO5EFRYDvrjA/view?usp=sharing)
   - Surrogate Model (only for poisoning TENT and RPL):
     - [VGG-11 pre-trained on CINIC-10 (without CIFAR-10)](https://drive.google.com/file/d/1xsgYAewsNUB-V9HJ_vpj41ggDCoXEWn9/view?usp=sharing)
+
+## Acknowledgements 🌻
+Our code is built upon the public code of the [TTT](https://github.com/yueatsprograms/ttt_cifar_release), [TENT](https://github.com/DequanWang/tent), and [DUA](https://github.com/jmiemirza/DUA).
