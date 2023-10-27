@@ -1,6 +1,5 @@
 from __future__ import print_function
 import sys
-sys.path.append("../..") 
 import argparse
 from tqdm import tqdm
 from PIL import Image
@@ -8,42 +7,34 @@ from subprocess import call
 import os
 import torch
 import torch.nn as nn
-
 import logging
+import torchvision.transforms as T
+import copy
+import numpy
+import random
+import os
 from utils.misc import *
 from utils.test_helpers import *
 from utils.prepare_dataset import *
 from utils.rotation import *
 from utils.build_model import *
 from utils.evaluation import *
-import copy
-import numpy
-import random
-import os
-from ttt_attacks import *
-
-import torchvision.transforms as T
+from poigen import *
 
 
 def load_local_ttt(branch, dirname):
-
   ext, head_rot, head_cls = build_target(arch="res18", dataset="cifar10", layer_branch=branch)
-
   cp_ext = torch.load(dirname + "/ext.pth")
   cp_head_rot = torch.load(dirname + "/head_rot.pth")
-
   ext.load_state_dict(cp_ext, strict=True)
   head_rot.load_state_dict(cp_head_rot, strict=True)
-
   net_rot = ExtractorHead(ext, head_rot)
   print("Load Lovel successfully!")
-
   return net_rot
 
 
 
 def attack_online():
-
   logging.basicConfig(filename="/root/code/res18_C10/ttt/log/ttt_2_attack2num_local_layer3.log",
             filemode='a',
             format='%(asctime)s, %(name)s %(levelname)s %(message)s',
@@ -73,7 +64,7 @@ def attack_online():
 
         ### Load model : head output dim 4 ###
         ext_target, head_rot_target, head_cls_target = load_target("res18", "cifar10", 4)
-        
+  
         #net_local = load_local_ttt(branch=4, dirname = "/root/code/res18_C10/ttt/checkpoints/cinic/surrogate/res18_layer4_200_128/")
         net_local = load_local_ttt(branch=3, dirname = "/root/code/res18_C10/ttt/checkpoints/cinic/surrogate/res18_layer3_200_128/")
         ######################################
@@ -86,13 +77,14 @@ def attack_online():
               head_rot_eval = copy.deepcopy(head_rot_target)
               head_cls_eval = copy.deepcopy(head_cls_target)
 
-              
               acc = test_online_ttt(eval_loader, ext_eval, head_rot_eval, head_cls_eval)
               acc_list[i].append(acc)
               logging.info(f"poison {batch_idx}, acc is {acc}")
             
             inputs_seed = inputs_seed.cuda()
             inputs_poisoned = DIM(inputs_seed, net_local)
+
+            ## Using poisoned samples to fine-tune the TTT-model
             adapt_single_ttt(inputs_poisoned, ext_target, head_rot_target)
           else:
             break
