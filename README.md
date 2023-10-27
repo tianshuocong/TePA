@@ -42,3 +42,11 @@ Then, we can get the results of Figure 5-8.
 <div align="center">
 <img width="80%" alt="The workflow of TePA" src="fig/poison_result.png">
 </div>
+
+## Dataset
+Please download the following datasets through the official website and 
+- CIFAR-10:
+- CIFAR-100:
+- CIFAR-10-C:
+- CIFAR-100-C:
+- CINIC-10:
