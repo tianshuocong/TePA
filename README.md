@@ -30,6 +30,8 @@ TePA depends on the following requirements:
 - First, we should check the utility of the frozen target model, and the utility of the TTT (using clean i.i.d. samples), run the following code, and then we can get the results of Figure 4 and Table 1 of our paper.
 ```
 python TTT/utility.py
+python DUA/utility.py
+python python utility.py --cfg cfgs/tent_sgd.yaml 
 ```
 
 ## Poison TTA-models 🦠
