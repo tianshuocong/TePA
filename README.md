@@ -7,7 +7,7 @@ In particular, we propose the first *test-time* poisoning attack against four ma
 <img width="80%" alt="The workflow of TePA" src="fig/workflow.png">
 </div>
 
-## Citation
+## Citation ☺️
 Thanks for your interest in our paper, please feel free to give us a ⭐️ and cite us through:
 ```bibtex
 @inproceedings{cong2024tepa,
@@ -18,7 +18,7 @@ Thanks for your interest in our paper, please feel free to give us a ⭐️ and 
 }
 ```
 
-## Requirements
+## Requirements 🔧
 TePA depends on the following requirements:
 - Basic: PyTorch 1.11.0, Python 3.8, Cuda 11.3
 - Others:
@@ -26,16 +26,17 @@ TePA depends on the following requirements:
   - TENT: https://github.com/DequanWang/tent
   - DUA: https://github.com/jmiemirza/DUA
 
-## Baseline
+## Baseline 🎯
 - First, we should check the utility of the frozen target model, and the utility of the TTT (using clean i.i.d. samples), run the following code, and then we can get the results of Figure 4 and Table 1 of our paper.
 ```
 python TTT/utility.py
 ```
 
-## Poison TTA-method
+## Poison TTA-models 🦠
 ```
-python TTT/utility.py
+python TTT/poison_ttt.py
 ```
+Then, we can get the results of Figure 5-8.
 
 <div align="center">
 <img width="80%" alt="The workflow of TePA" src="fig/poison_result.png">
