@@ -45,8 +45,12 @@ Then, we can get the results of Figure 5-8.
 
 ## Dataset
 Please download the following datasets through the official website and 
-- CIFAR-10:
-- CIFAR-100:
-- CIFAR-10-C:
-- CIFAR-100-C:
-- CINIC-10:
+- CIFAR-10 & CIFAR-100: https://www.cs.toronto.edu/~kriz/cifar.html
+- CIFAR-10-C: https://zenodo.org/records/2535967
+- CIFAR-100-C: https://zenodo.org/records/3555552
+- CINIC-10: https://github.com/BayesWatch/cinic-10
+
+## Models
+You can download the checkpoints here:
+- TTT:
+  - Target model: 
