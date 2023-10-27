@@ -20,7 +20,14 @@ Thanks for your interest in our paper, please feel free to give us a ⭐️ and 
 
 ## Requirements
 TePA depends on the following requirements:
-- TTT: https://github.com/yueatsprograms/ttt_cifar_release
-- TENT: https://github.com/DequanWang/tent
-- DUA: https://github.com/jmiemirza/DUA
+- Basic: PyTorch 1.11.0, Python 3.8, Cuda 11.3
+- Others:
+  - TTT: https://github.com/yueatsprograms/ttt_cifar_release
+  - TENT: https://github.com/DequanWang/tent
+  - DUA: https://github.com/jmiemirza/DUA
 
+## Baseline
+- First, we should check the utility of the frozen target model, and the utility of the TTT (using clean i.i.d. samples), run the following code, and then we can get the results of Figure 4 and Table 1 of our paper.
+```
+python TTT/utility.py
+```
