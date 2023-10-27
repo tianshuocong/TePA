@@ -1,5 +1,5 @@
 MODEL:
-  ADAPTATION: tent
+  ADAPTATION: rpl
   ARCH: Standard
 TEST:
   BATCH_SIZE: 200
