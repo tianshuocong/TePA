@@ -54,9 +54,9 @@ Please download the following datasets through the official website and
 You can download the checkpoints here:
 - TTT:
   - Target Models:
-    - [ResNet18 pre-trained on CIFAR-10](https://drive.google.com/file/d/1f524MN_rZfXoyReE0hdJFfVwesz_vrLp/view?usp=sharing)
-    - [ResNet18 pre-trained on CIFAR-100](https://drive.google.com/file/d/1nycPhkWNG66ooi9iK9eC2_eIKvMjCOUF/view?usp=sharing)
-    - [ResNet50 pre-trained on CIFAR-10](https://drive.google.com/file/d/11Q43JwSPTQgWe9nN4qjnKY1GfwecK4UT/view?usp=sharing)
-    - [ResNet50 pre-trained on CIFAR-100](https://drive.google.com/file/d/1kAuKDXItyszY8P035cSBkcg-wtTLUWbx/view?usp=sharing)
+    - [ResNet18-Y4 pre-trained on CIFAR-10](https://drive.google.com/file/d/1f524MN_rZfXoyReE0hdJFfVwesz_vrLp/view?usp=sharing)
+    - [ResNet18-Y3 pre-trained on CIFAR-100](https://drive.google.com/file/d/1nycPhkWNG66ooi9iK9eC2_eIKvMjCOUF/view?usp=sharing)
+    - [ResNet50-Y4 pre-trained on CIFAR-10](https://drive.google.com/file/d/11Q43JwSPTQgWe9nN4qjnKY1GfwecK4UT/view?usp=sharing)
+    - [ResNet50-Y3 pre-trained on CIFAR-100](https://drive.google.com/file/d/1kAuKDXItyszY8P035cSBkcg-wtTLUWbx/view?usp=sharing)
   - Surrogate Model:
     - [ResNet18 pre-trained on CINIC-10 (without CIFAR-10)](https://drive.google.com/file/d/18QdOFZxxeyQ00bgsrYZTV-AbZUwiXknL/view?usp=sharing)
