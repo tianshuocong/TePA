@@ -31,3 +31,12 @@ TePA depends on the following requirements:
 ```
 python TTT/utility.py
 ```
+
+## Poison TTA-method
+```
+python TTT/utility.py
+```
+
+<div align="center">
+<img width="80%" alt="The workflow of TePA" src="fig/poison_result.png">
+</div>
