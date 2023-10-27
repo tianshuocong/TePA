@@ -53,4 +53,6 @@ Please download the following datasets through the official website and
 ## Models
 You can download the checkpoints here:
 - TTT:
-  - Target model: 
+  - Target model:
+    - [ResNet18 pre-trained on CIFAR-10](https://drive.google.com/file/d/1f524MN_rZfXoyReE0hdJFfVwesz_vrLp/view?usp=sharing)
+    - [ResNet50 pre-trained on CIFAR-10](https://drive.google.com/file/d/11Q43JwSPTQgWe9nN4qjnKY1GfwecK4UT/view?usp=sharing)
