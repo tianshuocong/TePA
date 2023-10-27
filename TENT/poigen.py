@@ -61,8 +61,7 @@ def DIM(image, surrogate_model):
         image = x_start
 
         for xx in range(200):
-
-            #surrogate_model.eval()
+            
             surrogate_model.train()
             surrogate_model.zero_grad = True
             surrogate_model = surrogate_model.cuda()
