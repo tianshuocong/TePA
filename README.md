@@ -31,8 +31,9 @@ TePA depends on the following requirements:
 ```
 python TTT/utility.py
 python DUA/utility.py
-python python utility.py --cfg cfgs/tent_sgd.yaml 
+python TENT/utility.py --cfg cfgs/tent_sgd.yaml 
 ```
+
 
 ## Poison TTA-models 🦠
 Algorithm-1 is implemented in `TTA/poigen.py`, here we use DIM as the transfer-based adversarial attack method. After generating poisoned samples by `poigen.py`, we upload the poisoned samples to target TTA-models through running:  
