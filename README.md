@@ -60,3 +60,6 @@ You can download the checkpoints here:
     - [ResNet50-Y3 pre-trained on CIFAR-100](https://drive.google.com/file/d/1kAuKDXItyszY8P035cSBkcg-wtTLUWbx/view?usp=sharing)
   - Surrogate Model:
     - [ResNet18-Y3 pre-trained on CINIC-10 (without CIFAR-10)](https://drive.google.com/file/d/18QdOFZxxeyQ00bgsrYZTV-AbZUwiXknL/view?usp=sharing)
+- DUA & TENT & RPL:
+  - Target Models:
+    - [ResNet18 preitrained on CIFAR-10](https://drive.google.com/file/d/1hEIjT2zwvxZp6T1FhoxqGFYVQ1W3fNuI/view?usp=sharing)
