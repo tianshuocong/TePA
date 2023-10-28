@@ -1,5 +1,8 @@
 # 🎃TePA (IEEE S&P 2024)
 
+[![arXiv](https://img.shields.io/badge/arxiv-2301.01197-b31b1b)](https://arxiv.org/abs/2308.08505)
+<a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a>
+
 This repository contains the PyTorch implementation of the paper "[Test-Time Poisoning Attacks Against Test-Time Adaptation Models](https://arxiv.org/abs/2308.08505)" by [Tianshuo Cong](https://tianshuocong.github.io/), [Xinlei He](https://xinleihe.github.io/), [Yun Shen](https://scholar.google.com/citations?hl=en&user=Gx_JJ6cAAAAJ), and [Yang Zhang](https://yangzhangalmo.github.io/).
 In particular, we propose the first *test-time* poisoning attack against four mainstream test-time adaptation methods, including TTT, DUA, TENT, and RPL. Here is the workflow of TePA:
 
