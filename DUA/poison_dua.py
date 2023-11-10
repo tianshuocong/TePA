@@ -10,7 +10,6 @@ import numpy
 from tools_dua import *
 import torchvision.transforms as T
 from models.resnet import resnet18
-from models_kuangliu import *
 
 
 
@@ -28,12 +27,6 @@ if __name__ == '__main__':
     cr_list = ["original", "glass_blur",  "fog", "contrast"]
     level_list = [5]
 
-    flag_visual = 1
-
-    surrogate_model = VGG('VGG11').cuda()
-    checkpoint = torch.load("./ckpt/surrogate/cinic10/kuangliu/vgg11-0215.pth")
-    surrogate_model.load_state_dict(checkpoint['net'])
-   
     ### online
     for level in level_list:
 
