@@ -10,7 +10,7 @@ from tools_rpl import *
 from models.resnet import resnet18
 from models.vgg import vgg11_bn
 from setup import *
-from models_kuangliu import *
+from models_surrogate import *
 from poigen import *
 
 def evaluate(description):
