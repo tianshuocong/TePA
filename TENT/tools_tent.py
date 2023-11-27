@@ -34,7 +34,6 @@ def test_online_tent(dataloader, model_in):
     for batch_idx, (inputs, labels) in enumerate(dataloader):
         inputs, labels = inputs.cuda(), labels.cuda()
         model = copy.deepcopy(model_in)
-        model.eval()
         with torch.no_grad():
             outputs = model(inputs)
         _, predicted = outputs.max(1)
