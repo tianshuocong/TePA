@@ -105,7 +105,7 @@ def eval_online():
                     else:
                         break
 
-                acc_online = test_online_tent(teloader_2, model)
+                acc_online = test_tent(teloader_2, model)
                 acc_each_list.append(acc_online)
 
             arr = numpy.array(acc_each_list)
