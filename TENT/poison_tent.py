@@ -70,7 +70,7 @@ def evaluate(description):
 
                     _, eval_loader = prepare_test_data(corruption, level, "norm_true")
 
-                    acc_online = test_tent(eval_loader, model)
+                    acc_online = test_online_tent(eval_loader, model)
                     print(acc_online)
                     acc_each_list.append(acc_online)
 
