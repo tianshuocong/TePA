@@ -40,8 +40,8 @@ class rpl(nn.Module):
 
 
 
-def gce(logits, target, q = 0.8):
-    probs = torch.nn.functional.softmax(logits, dim=1)
+def gce(outputs, target, q = 0.8):
+    probs = torch.nn.functional.softmax(outputs, dim=1)
     probs_with_correct_idx = probs.index_select(-1, target).diag()
     loss = (1. - probs_with_correct_idx**q) / q
     return loss.mean()
@@ -60,7 +60,7 @@ def forward_and_adapt(x, model, optimizer):
     Measure entropy of the model prediction, take gradients, and update params.
     """
     outputs = model(x)
-    loss = gce(logits, predictions, q = 0.8)
+    loss = gce(outputs, predictions, q = 0.8)
     loss.backward()
     optimizer.step()
     optimizer.zero_grad()
