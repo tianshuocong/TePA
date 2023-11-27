@@ -16,7 +16,20 @@ import copy
 import time
 
 
-def test_tent(dataloader, model_in):
+def test_base_tent(dataloader, net):
+    net.eval()
+    correct = []
+    for batch_idx, (inputs, labels) in enumerate(dataloader):
+        inputs, labels = inputs.cuda(), labels.cuda()
+        with torch.no_grad():
+            outputs = net(inputs)
+            _, predicted = outputs.max(1)
+            correct.append(predicted.eq(labels).cpu())
+    correct = torch.cat(correct).numpy()
+    acc = round(correct.mean()*100, 2)
+    return acc
+
+def test_online_tent(dataloader, model_in):
     correct = []
     for batch_idx, (inputs, labels) in enumerate(dataloader):
         inputs, labels = inputs.cuda(), labels.cuda()
@@ -29,7 +42,6 @@ def test_tent(dataloader, model_in):
     correct = torch.cat(correct).numpy()
     acc = round(correct.mean()*100, 2)
     return acc
-
 
 def prepare_test_data(corruption, level, trans = "norm_false"):
 
