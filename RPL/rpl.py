@@ -60,6 +60,7 @@ def forward_and_adapt(x, model, optimizer):
     Measure entropy of the model prediction, take gradients, and update params.
     """
     outputs = model(x)
+    predictions = outputs.argmax(dim = 1)
     loss = gce(outputs, predictions, q = 0.8)
     loss.backward()
     optimizer.step()
