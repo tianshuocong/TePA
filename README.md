@@ -11,7 +11,7 @@ In particular, we propose the first *test-time* poisoning attack against four ma
 </div>
 
 ## Citation ☺️
-Thanks for your interest in our paper, please feel free to give us a ⭐️ and cite us through:
+Thanks for your interest in our paper, please feel free to leave a ⭐️ or cite us, thanks!
 ```bibtex
 @inproceedings{cong2024tepa,
   title={Test-Time Poisoning Attacks Against Test-Time Adaptation Models},
