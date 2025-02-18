@@ -10,6 +10,11 @@ common_corruptions = ['gaussian_noise', 'shot_noise', 'impulse_noise', 'defocus_
                     'brightness', 'contrast', 'elastic_transform', 'pixelate', 'jpeg_compression']
 
 
+tr_transforms = transforms.Compose([transforms.RandomCrop(32, padding=4),
+									transforms.RandomHorizontalFlip(),
+									transforms.ToTensor(),
+									transforms.Normalize(*NORM)])
+
 
 def prepare_test_data_ttt(corruption, level, trans = "norm_false"):
 
